@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+body {
+    background-color: #ffcbcb;
+}
+.container, .box1, .box2{
+    background-color: white;
+    margin: 0 1.875rem 3.125rem 1.875rem;
+}
+
+/* -----------------NAVIGATION BAR------------------------------*/
+nav .container {
+    margin: 0;
+    background-color:#407088;
+}
+nav li {
+    display: inline;
+    padding: 0 3.125rem ;
+}
+.navContainer {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;  
+}
+a {
+    color: #ffb5b5;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffb5b5;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        height: 9.375rem;
+        background-color: #407088;
+        padding: 3.125rem; 
+    }
+    .navContainer li {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    nav {
+        height: 12.5rem;
+        background-color: #407088;
+        font-size: 2rem;
+    }
+    .navContainer li {
+        font-size: 2rem;
+    }    
+
+}
+/* -----------------HEADER------------------------------*/
+
+
+.headerTitle {
+    background-image: url("resources/ashim-d-silva-P8gLaJ-PZL0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 9.375rem;
+}
+.headerArticle p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #132743;
+    background-color: #ffb5b5;
+    opacity: 0.6;
+    line-height: 3.125rem;
+    margin-top: 2.5rem;
+    position: relative;
+    top: 3rem;
+}
+h2 {
+    text-align: center;
+    color: #132743;
+    padding-top: 1.875rem;
+    padding-bottom: 2rem;
+}
+span {
+    font-size: large;
+}
+ol {
+    list-style-position: inside;
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+
+    header .container{
+        margin: -20px 0px 10px 0px;
+    }
+    .headerArticle p {
+        text-align: justify;
+    }
+    ol {
+        padding-left: 2rem;
+    }
+
+}
+
+/* -----------------MAIN------------------------------*/
+
+
+h3 {
+    background-color: #ffb5b5;
+    color: #407088;
+    padding-left: 1.875rem;
+
+}
+p {
+    padding: 0.3125rem;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.375rem;
+    margin-bottom: 1.25rem;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+}
+.articleContent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+.articles img  {
+    width: 9.375rem;
+    height: 12.5rem;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 1rem; 
+    }
+    h2 {
+        font-size: 2rem;
+        padding-top: 3rem;
+    }
+    main .container{
+        margin: 0px 0px 10px 0px;      
+    }
+    .bookTitle, .eventTitle, .articleTitle {
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+    .articleContent {
+        flex-direction: column;
+    }
+    .articleIMG {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* -----------------footer------------------------------*/
+
+.footerTitle h3{
+    font-size: 1rem;
+    background-color: white;
+    color: #ffb5b5;
+}
+.contact, .media {
+    text-align: center;
+}
+.adress, .email, .number, .social {
+    font-size: 0.9rem;
+    display: inline-block;
+    padding-left: 2rem;
+}
+.social img{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .social img {
+        display: none;
+    }
+    .footerTitle {
+        text-align: center;
+    }
+    .footerTitle h3 {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    .box1, .box2 {
+        background-color:#ffcbcb;  
+        display: flex;
+        justify-content: center;
+    }
+    .box2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerTitle {
+        display: none;
+    }
+    .social img{
+        display:unset;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .media {
+        justify-content: center;
+    }
+    span {
+        display: none;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
